@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Flipkart</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Anti Flipkart</h1>
+        <p>Simple shopping. Better prices.</p>
+    </header>
+
+    <main>
+        <section class="product-section" id="products-section">
+            <h2>Our Products</h2>
+
+            <div class="filters">
+                <input type="text" id="search" placeholder="Search products">
+
+                <select id="category">
+                    <option value="All">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                </select>
+
+                <select id="sort">
+                    <option value="default">Default Sorting</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </div>
+
+            <div id="products" class="products"></div>
+        </section>
+
+        <section class="cart-section" id="cart-section">
+            <h2>Shopping Cart</h2>
+
+            <div id="cart"></div>
+
+            <div class="bill">
+                <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+                <p>Discount: ₹<span id="discount">0.00</span></p>
+                <h3>Total: ₹<span id="total">0.00</span></h3>
+            </div>
+
+            <div class="coupon-box">
+                <input type="text" id="coupon" placeholder="Enter SAVE10">
+                <button id="apply">Apply Coupon</button>
+            </div>
+
+            <p id="message"></p>
+
+            <button id="checkout">Proceed to Checkout</button>
+            <p id="checkout-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Anti Flipkart</h2>
+                <p>Simple shopping. Better prices.</p>
+                <p>Your everyday shopping destination.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#products-section">Products</a>
+                <a href="#cart-section">Shopping Cart</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: support@antiflipkart.com</p>
+                <p>Customer Support: Monday–Saturday</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anti Flipkart. All rights reserved.</p>
+            <p>CE-1 Ecommerce Mini Project</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
